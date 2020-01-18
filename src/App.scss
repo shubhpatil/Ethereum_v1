@@ -1,0 +1,19 @@
+$myColor : red;
+
+@mixin NewColor($color) {
+  color: $color;
+}
+
+.container{
+  h1{
+    color: $myColor;
+  }
+}
+
+h4{
+  @include NewColor(coral);
+}
+
+h3{
+  @include NewColor(blue);
+}
